@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #03131b;
+    --secondary-color: #0f394b;
+    --tertiary-color: #81bcd9;
+    --text-color: #f6f6f6;
+}
+
+
+
+body {
+    background-color: var(--primary-color);
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+/* HEADER STYLE*/
+
+header {
+    padding: 20px 35px;
+    background-color: var(--secondary-color);
+}
+
+/* HERO STYLE*/
+
+.hero {
+ background-image: url(../images/hero.jpg);
+ background-size: cover;
+ background-position: center;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ align-items: flex-start;
+ flex-direction: row;
+ background-attachment: fixed;
+ background-position: 80%;
+ height: 500px;
+ width: 100%;
+}
+
+.hero-picture {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: flex-start;
+ size: 40%;
+ padding: 50px;   
+ width: 100%;
+}
+
+.hero-statement {
+    display: flex;
+    flex-wrap: wrap;
+    color: var(--text-color);
+}
