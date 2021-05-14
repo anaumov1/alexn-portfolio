@@ -14,7 +14,7 @@
 
 
 body {
-    background-color: var(--primary-color);
+    background-image: url(../images/hero.jpg);
     font-family: Helvetica, Arial, sans-serif;
 }
 
@@ -22,37 +22,112 @@ body {
 
 header {
     padding: 20px 35px;
-    background-color: var(--secondary-color);
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-size: cover;
+    background-position: center;
+    background-position: 80%;
+    z-index: 9999;
 }
+
+header h1 a {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--text-color);
+    text-decoration: none;
+    opacity: 0.8;
+    padding-left: 35px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+
+}
+
+header a {
+    text-decoration: none;
+    color: var(--text-color);
+    opacity: 0.8;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+header nav ul li a:hover {
+    background-color: var(--secondary-color);
+    border-radius: 15px;
+    font-size: 1.70vw;
+}
+
 
 /* HERO STYLE*/
 
 .hero {
- background-image: url(../images/hero.jpg);
+ background-color: rgb(15,57,75, 0.3);
  background-size: cover;
- background-position: center;
  display: flex;
- justify-content: space-between;
+ justify-content: center;
  flex-wrap: wrap;
  align-items: flex-start;
- flex-direction: row;
  background-attachment: fixed;
  background-position: 80%;
- height: 500px;
- width: 100%;
+ width: auto;
+ padding: 20px;
 }
 
 .hero-picture {
- display: flex;
- flex-wrap: wrap;
- justify-content: flex-start;
  size: 40%;
- padding: 50px;   
- width: 100%;
+ padding: 50px;
+ margin-right: auto;   
+ max-width: 100%;
+ height: auto;
 }
 
 .hero-statement {
-    display: flex;
-    flex-wrap: wrap;
     color: var(--text-color);
+    width: 40%;
+    text-align: left;
+    margin: 4%;
+    font-size: 20px;
+    background-color: rgb(15,57,75, 0.7);
+    padding: 30px 30px 20px 20px;
+    border-radius: 20px;
+}
+
+.hero-statement h2 {
+    margin-bottom: 5%;
+    font-size: 60px;
+}
+
+.ocupation { 
+    line-height: 1.5;
+    padding-bottom: 4%;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+.quote {
+    font: italic;
+    font-size: x-large;
+    text-decoration: underline;
+}
+    
+
+section {
+    padding: 60px;
 }
