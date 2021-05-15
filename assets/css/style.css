@@ -32,6 +32,7 @@ header {
     background-size: cover;
     background-position: center;
     background-position: 80%;
+    width: 100%;
     z-index: 9999;
 }
 
@@ -59,6 +60,7 @@ header nav ul {
     justify-content: space-around;
     align-items: center;
     list-style: none;
+    margin-right: 50px;
 }
 
 header nav ul li a {
@@ -90,7 +92,7 @@ header nav ul li a:hover {
  padding: 20px;
 }
 
-.hero-picture {
+.hero-picture img {
  size: 40%;
  padding: 50px;
  margin-right: auto;   
@@ -111,13 +113,13 @@ header nav ul li a:hover {
 
 .hero-statement h2 {
     margin-bottom: 5%;
-    font-size: 60px;
+    font-size: 3.3vw;
 }
 
 .ocupation { 
     line-height: 1.5;
     padding-bottom: 4%;
-    font-size: xx-large;
+    font-size: 2.0vw;
     font-weight: bold;
 }
 
@@ -131,3 +133,102 @@ header nav ul li a:hover {
 section {
     padding: 60px;
 }
+
+/*About me*/
+
+.box {
+    width: 80;
+    color: var(--text-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(15,57,75, 0.7)
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.section-title {
+    width: 25%;
+    font-size: 40px;
+    text-align: center;
+    border-right: 8px solid;
+    border-color: var(--text-color);
+    flex: 1;
+    width: 100%;
+    opacity: 0.8;
+}
+
+.section-title h2 {
+    padding-right: 20px;
+}
+
+.section-text {
+    width: 75%;
+    font-size: 25px;
+    line-height: 1.5; 
+    margin-left: 40px;
+}
+.section-text p {
+    margin-bottom: 10px;
+}
+
+/*Style my work section*/
+
+.container {
+    width: 75%;
+    margin-left: 40px;
+    }
+    
+.large-img {
+    width: 100%;
+    align-content: center;
+}
+
+.large-img img {
+    flex: 1;
+    width: 100%;
+    max-width: 1245px;
+    height: auto;
+    border: 7px solid;
+    border-color: var(--primary-color);
+    opacity: 0.8;
+    margin-bottom: 10px;
+}
+
+.small-img {
+    width: 50%;
+   }
+
+.small-img img {
+    width: 100%;
+    max-width: 575px;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    border: 5px solid;
+    border-color: var(--primary-color);
+    opacity: 0.8;
+    flex: 1;
+}
+
+.row img:hover {
+    opacity: 1.0;
+}
+
+#see-my-work h2 {
+text-align: center;
+}
+
+
+
+
+
+
+
+
