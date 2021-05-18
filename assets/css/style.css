@@ -149,6 +149,7 @@ section {
     justify-content: space-between;
     flex-wrap: wrap;
     display: flex;
+    flex-direction: column;
 }
 
 .section-title {
@@ -208,7 +209,7 @@ section {
 .small-img img {
     width: 100%;
     max-width: 575px;
-    height: 300px;
+    height: auto;
     border: 5px solid;
     border-color: var(--primary-color);
     opacity: 0.8;
@@ -295,8 +296,7 @@ footer div {
 }
 
 @media screen and (max-width: 767px) {
-    .row1 {
-        flex-direction: column;
+    .row {
         justify-content: left;
     }
 }
@@ -319,18 +319,15 @@ footer div {
     h2 {
         font-size: x-large;
     }
-    .row1 {
-        font-size: small;
-        }
-
-    #contact-me {
+    
+     #contact-me {
       padding: 0px 0 20px 0;
     }
     #email {
         font-size: x-large;
     }
     footer h3 {
-     font-size: x-large;
+     font-size: sizethatfits;
     }
     .hero h2, .hero p {
         font-size: medium;
@@ -342,10 +339,12 @@ footer div {
         width: 100%;
         padding: 0;
     }
-    .row {
-        display: grid;
+    .small img img {
+        width: 100%;
     }
-
+    .row {
+        width: 100%;
+    }
     }
 
 
