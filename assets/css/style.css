@@ -146,10 +146,9 @@ section {
 
 .row {
     width: 100%;
-    display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    align-items: center;
+    display: flex;
 }
 
 .section-title {
@@ -210,8 +209,6 @@ section {
     width: 100%;
     max-width: 575px;
     height: 300px;
-    object-fit: cover;
-    object-position: top;
     border: 5px solid;
     border-color: var(--primary-color);
     opacity: 0.8;
@@ -226,19 +223,26 @@ section {
 text-align: center;
 }
 
-.picture-name {
-    font-size: 40px;
-    opacity: .8;
-    margin-bottom: 10px;
-   
-}
+/*image title block*/
+.img-title {
+    position: relative;
+  }
+  .text-block {
+    position: absolute;
+    bottom: 10px;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
 
 /*Contact*/
 
 .section-text a {
     flex: 1;
     font-size: 25px;
-    color: aliceblue;
+    color: var(--text-color);
     text-decoration: none;
 }
 
@@ -299,7 +303,9 @@ footer div {
 
 @media screen and (max-width: 575px) {
     header h1 {
-     text-align: center;   
+     text-align: center; 
+     padding-right: 30px; 
+     padding-bottom: 30px;
     }
 
     .small-img {
@@ -310,7 +316,38 @@ footer div {
         width: 100%;
         flex: 1;
     }
-}
+    h2 {
+        font-size: x-large;
+    }
+    .row1 {
+        font-size: small;
+        }
+
+    #contact-me {
+      padding: 0px 0 20px 0;
+    }
+    #email {
+        font-size: x-large;
+    }
+    footer h3 {
+     font-size: x-large;
+    }
+    .hero h2, .hero p {
+        font-size: medium;
+    }
+    .section-text p {
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+        padding: 0;
+    }
+    .row {
+        display: grid;
+    }
+
+    }
+
 
 
 
