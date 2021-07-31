@@ -1,173 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alexandru Naumov Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Asap' rel='stylesheet'>
     <link rel="stylesheet" href="./assets/css/style.css" />
-    <title>Alex Naumov Portfolio</title>
 </head>
-
 <body>
-
-    <!-- HEADER-->
-
+    <!-- Intro Section -->
+    <section class="intro-main">
+        <h1>Alex Naumov</h1>
+        <h3>Full Stack Developer</h3>
+    </section>
     <header>
-        <h1>
-            <a href="/">Alexandru Naumov</a>
-        </h1>
-        <nav>
+        <!-- Navigation -->
+        <nav class="nav-buttons">
             <ul>
                 <li>
                     <a href="#about-me">About Me</a>
                 </li>
                 <li>
-                    <a href="#see-my-work">See My Work</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
-                    <a href="#contact-me">Contact Me</a>
+                    <a href="#contact-info">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
 
-    <!--HERO-->
-    <section class="hero">
-        <div class="hero-picture">
-            <img src="./assets/images/pic alex.jpg"
-                alt="Picture of Alex Naumov with the Golden Gate bridge in the background">
+    <!-- About Me -->
+    <section id="about-me">
+        <div class="flex-row">
+            <!-- About Me Header -->
+            <h2 class="section-title-primary">About Me</h2>
         </div>
-        <div class="hero-statement">
-            <h2>Alexandru Naumov</h2>
-            <p class="ocupation">Full Stack Web Developer.</p>
-            <p class="quote">- I would like to change the world, but they won't give me the source code.</p>
-        </div>
-    </section>
-
-    <!--About Me-->
-
-    <section id="about-me" class="box">
-        <div class="row">
-            <div class="section-title">
-                <h2>About </br> Me</h2>
-            </div>
-            <div class="section-text">
+        <!-- About me parent container -->
+        <div class="about-me">
+            <article class="bio">
+                <img src="./assets/images/profilepic2.jpg" width="300" height="300" alt="profile-picture" />
                 <p>
-                    Hello, and welcome to my porfolio page. I'm currently enrolled in the U.T. Coding Bootcamp and
-                    building this portfolio as I go thru the class.
-                    This portfolio will be expanding and changing for the next few months as I add in my best projects.
+                     Hello, my name is Alexandru Naumov. I'm a Full Stack Web Developer and recently received my certification following 
+                    years of passion for technology and being involved in software development on different levels.
+
+                    <br /><br />
+                    
+                     I'm looking forward to this new step in my life and follow a longtime passion in technology. 
+                    With experience in front end, UX, databases and software and hardware testing I can add value to any team of developers.
+                    New acquired skills in JavaScript, NodeJS, React and many others I learned and continue to add to my skill set 
+                    I feel ready for the upcoming challenges in the new career.
                 </p>
-                <p>
-                    I'm experienced in Supply Chain Management, Manufacturing and Management as well as being an
-                    business owner in logistics and transportation
-                    industry for the past few years. </p>
-                I'm looking forward to this new step in my life and follow a longtime passion in technology.
-                </p>
-            </div>
+            </article>
         </div>
     </section>
 
-    <section id="see-my-work" class="box">
-            <div class="row">
-                <div class="section-title">
-                    <h2>My Work</h2>
+    <!-- Projects -->
+    <section id="projects">
+        <div class="flex-row">
+            <!-- Project Header -->
+            <h2 class="section-title-secondary">Projects</h2>
+        </div>
+        <!-- Projects parent container -->
+        <div class="projects">
+            <!-- Project 1: Run Buddy -->
+            <article class="project">
+                <img class="proj-thumbnail" src="./assets/images/run-buddy.PNG" alt="Run Buddy" />
+                <a href="https://anaumov1.github.io/run-buddy/" target="_blank">
+                    <div class="proj-overlay">
+                        <h3 class="proj-title">Run Buddy Landing Page</h3>
+                        <h4 class="proj-subtitle">HTML/CSS</h4>
+                    </div>
+                </a>
+            </article>
+            <!-- Project 2: Destination Unknown -->
+            <article class="project">
+                <img class="proj-thumbnail" src="./assets/images/destination-unknown.png" alt="Destination Unknown" />
+                <a href="https://anaumov1.github.io/api-project/" target="_blank">
+                    <div class="proj-overlay">
+                        <h3 class="proj-title">Destination Unknown</h3>
+                        <h4 class="proj-subtitle">HTML/CSS/JavaScript/API</h4>
+                    </div>
+                </a>
+            </article>
+            <!-- Project 3: Placeholder -->
+            <article class="project">
+                <img class="proj-thumbnail" src="assets/images/placeholder.png" alt="Under Construction" />
+                <div class="proj-overlay">
+                    <h3 class="proj-title">Coming Soon</h3>
+                    <h4 class="proj-subtitle">Check back later!</h4>
                 </div>
-                <!--pictures container-->
-                <div class="container">
-                    <!--row1-large picture-->
-                    <div class="row">
-                        <div class="large-img">
-                            <div class="img-title">
-                                <a href="https://anaumov1.github.io/run-buddy/">
-                                    <img src="./assets/images/run-buddy.PNG" alt="Run-Boddy landing page screenshot">
-                                    <div class="text-block">
-                                        <h3>Run-Buddy</h3>
-                                        <p>HTML/CSS</p>
-                                    </div>
-                            </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!--row2-small pictures-->
-                    <div class="row">
-                        <div class="small-img">
-                            <a href="https://anaumov1.github.io/alexn-horiseon/">
-                                <div class="img-title">
-                                    <img src="./assets/images/horiseon.PNG" alt="Horiseon landing page screenshot" style="width:100%;">
-                                    <div class="text-block">
-                                        <h3>Horiseon</h3>
-                                        <p>HTML/CSS</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="small-img">
-                            <div class="img-title">
-                                <img src="./assets/images/placeholder.png" alt="placeholder" style="width:100%;">
-                                <div class="text-block">
-                                    <h3>Coming Soon</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!--row3-small pictures-->
-
-                    <div class="row">
-                        <div class="small-img">
-                            <div class="img-title">
-                                <img src="./assets/images/placeholder.png" alt="placeholder" style="width:100%;">
-                                <div class="text-block">
-                                    <h3>Coming Soon</h3>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="small-img">
-                            <div class="img-title">
-                                <img src="./assets/images/placeholder.png" alt="placeholder" style="width:100%;">
-                                <div class="text-block">
-                                    <h3>Coming Soon</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-    </section>
-
-    <!--contact me section-->
-
-    <!--contact me section-->
-    <section id="contact-me" class="box">
-        <div class="row">
-            <div class="section-title">
-                <h2>Contact </br> Me</h2>
-            </div>
-            <div class="section-text">
-                <div class="row" class=row1>
-                    <div>
-                        <a href="tel:512-574-5105">512-574-5105</a>
-                    </div>
-                    <div>
-                        <a id="email" href="">alexandru.naumov@gmail.com</a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/anaumov1">Me on GitHub</a>
-                    </div>
-                    <div>
-                        <a href="https://www.linkedin.com/in/alexandru-naumov-552ba0128/">Me on LinkedIn</a>
-                    </div>
+            </article>
+            <!-- Project 4: Placeholder -->
+            <article class="project">
+                <img class="proj-thumbnail" src="assets/images/placeholder.png" alt="Under Construction" />
+                <div class="proj-overlay">
+                    <h3 class="proj-title">Coming Soon</h3>
+                    <h4 class="proj-subtitle">Check back later!</h4>
                 </div>
-            </div>
+            </article>
         </div>
     </section>
+
+    <!-- Contact Info -->
+    <section id="contact-info">
+        <div class="flex-row">
+            <h2 class="section-title-primary">Contact</h2>
+        </div>
+        <div class="contact-social">
+            <ul class="socialbtns">
+                <li>
+                    <a href="https://github.com/anaumov1" target="_blank">
+                        <img src="./assets/images/github-icon.svg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com/in/alexnaumovswe" target="_blank">
+                        <img src="./assets/images/linkedin-icon.svg" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a href="mailto:alexandru.naumov@gmail.com">
+                        <img src="./assets/images/email-icon.svg" alt="Email Me">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <h3>Made by Alexandru Naumov</h3>
-        <div>&copy; 2021 Alexandru Naumov</div>
-
+        <h2>Made by Alexandru Naumov</h2>
     </footer>
-
 </body>
-
 </html>
